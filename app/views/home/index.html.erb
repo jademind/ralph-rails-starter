@@ -1,0 +1,368 @@
+<%# Hero Section %>
+<section class="w-full -mx-5 px-5 py-16 lg:py-24 text-center">
+  <div class="max-w-5xl mx-auto">
+    <%# Version Badge %>
+    <div class="mb-8">
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-700">
+        <%= t(".hero.version_badge") %>
+      </span>
+    </div>
+
+    <%# Headline %>
+    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight">
+      <%= t(".hero.headline") %>
+    </h1>
+
+    <%# Subheadline %>
+    <p class="text-xl sm:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+      <%= t(".hero.subheadline") %>
+    </p>
+
+    <%# CTAs %>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <%= link_to t(".hero.cta_primary"), new_session_path, class: "w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-md shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 text-center" %>
+      <%= link_to t(".hero.cta_secondary"), "https://github.com/jademind/ralph-rails-starter", class: "w-full sm:w-auto px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-md shadow hover:shadow-md hover:border-blue-400 transition-all duration-200 text-center" %>
+    </div>
+  </div>
+</section>
+
+<%# Ralph Wiggum Feature Section %>
+<section class="w-full -mx-5 px-5 py-16 lg:py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 border-y border-purple-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full text-sm font-semibold text-purple-700 mb-4">
+        <span>🤖</span>
+        <span>AI-Powered Development</span>
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
+        Meet Ralph Wiggum
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Your autonomous AI agent that iteratively builds features from PRDs with minimal human intervention
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <%# Left: Workflow Steps %>
+      <div class="space-y-6">
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-lg text-gray-900 mb-1">Create PRD</h3>
+              <p class="text-gray-600 text-sm">Define your feature requirements with Claude's help using <code class="bg-gray-100 px-2 py-1 rounded text-xs">./ralph.sh create-prd</code></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-lg text-gray-900 mb-1">Generate Tasks</h3>
+              <p class="text-gray-600 text-sm">Convert PRD into actionable tasks using <code class="bg-gray-100 px-2 py-1 rounded text-xs">./ralph.sh create-tasks</code></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-500">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-lg text-gray-900 mb-1">Run Autonomous Build</h3>
+              <p class="text-gray-600 text-sm">Let Ralph work through tasks, write code, run tests, and commit changes with <code class="bg-gray-100 px-2 py-1 rounded text-xs">./ralph.sh run</code></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%# Right: Benefits %>
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Why Ralph Wiggum?</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 text-xl flex-shrink-0">✓</span>
+            <div>
+              <strong class="text-gray-900">Autonomous Development</strong>
+              <p class="text-gray-600 text-sm">Works through tasks independently while you focus on product decisions</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 text-xl flex-shrink-0">✓</span>
+            <div>
+              <strong class="text-gray-900">Iterative Progress</strong>
+              <p class="text-gray-600 text-sm">Maintains state, handles errors, and tracks progress across sessions</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 text-xl flex-shrink-0">✓</span>
+            <div>
+              <strong class="text-gray-900">Built-in Best Practices</strong>
+              <p class="text-gray-600 text-sm">Follows Rails conventions, writes tests, and commits changes properly</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 text-xl flex-shrink-0">✓</span>
+            <div>
+              <strong class="text-gray-900">Fast Feature Delivery</strong>
+              <p class="text-gray-600 text-sm">Ship features in hours instead of days with AI-assisted development</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-6 pt-6 border-t border-gray-200">
+          <a href="https://github.com/snarktank/ralph" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 font-medium text-sm inline-flex items-center gap-1">
+            Learn more about Ralph Wiggum
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Benefits Section %>
+<section class="w-full -mx-5 px-5 py-16 lg:py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16 text-gray-900">
+      <%= t(".benefits.section_title") %>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <%# Modern & Simple %>
+      <div class="bg-white rounded-lg shadow p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+          <%= t(".benefits.modern.icon") %>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-900">
+          <%= t(".benefits.modern.title") %>
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          <%= t(".benefits.modern.description") %>
+        </p>
+      </div>
+
+      <%# Secure by Default %>
+      <div class="bg-white rounded-lg shadow p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+          <%= t(".benefits.secure.icon") %>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-900">
+          <%= t(".benefits.secure.title") %>
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          <%= t(".benefits.secure.description") %>
+        </p>
+      </div>
+
+      <%# Production Ready %>
+      <div class="bg-white rounded-lg shadow p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+          <%= t(".benefits.deploy.icon") %>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-900">
+          <%= t(".benefits.deploy.title") %>
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          <%= t(".benefits.deploy.description") %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Features Grid Section %>
+<section class="w-full -mx-5 px-5 py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl lg:text-4xl font-bold text-center mb-4 text-gray-900">
+      <%= t(".features.section_title") %>
+    </h2>
+    <p class="text-center text-gray-600 mb-12 text-lg">
+      <%= t(".features.section_subtitle") %>
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <%# Feature Cards %>
+      <% [
+        { icon: "🤖", key: "ralph" },
+        { icon: "🎨", key: "tailwind" },
+        { icon: "⚡", key: "hotwire" },
+        { icon: "🔐", key: "authentication" },
+        { icon: "🛡️", key: "authorization" },
+        { icon: "💾", key: "solid_queue" },
+        { icon: "🗄️", key: "solid_cache" },
+        { icon: "📡", key: "solid_cable" },
+        { icon: "🐳", key: "docker" },
+        { icon: "📦", key: "importmap" },
+        { icon: "🔍", key: "brakeman" },
+        { icon: "🎯", key: "rate_limiting" },
+        { icon: "🌐", key: "pwa" },
+        { icon: "⚙️", key: "ci_cd" },
+        { icon: "📱", key: "responsive" },
+        { icon: "🌍", key: "i18n" },
+        { icon: "⚡", key: "propshaft" }
+      ].each do |feature| %>
+        <div class="bg-white rounded-lg shadow p-6 hover:shadow-md transition-shadow border border-gray-100 text-center">
+          <div class="text-3xl mb-3"><%= feature[:icon] %></div>
+          <h3 class="text-sm font-semibold text-gray-700">
+            <%= t(".features.#{feature[:key]}") %>
+          </h3>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<%# Technology Stack Section %>
+<section class="w-full -mx-5 px-5 py-16 lg:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-white">
+      <%= t(".tech_stack.section_title") %>
+    </h2>
+
+    <%# Core Technologies %>
+    <div class="mb-12">
+      <h3 class="text-xl font-semibold text-gray-300 mb-4 text-center md:text-left">
+        <%= t(".tech_stack.core") %>
+      </h3>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Rails 8.1.2</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Ruby 3.4.8</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Puma</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">SQLite</span>
+      </div>
+    </div>
+
+    <%# Frontend Technologies %>
+    <div class="mb-12">
+      <h3 class="text-xl font-semibold text-gray-300 mb-4 text-center md:text-left">
+        <%= t(".tech_stack.frontend") %>
+      </h3>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Hotwire</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Turbo</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Stimulus</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Tailwind CSS</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Import Maps</span>
+      </div>
+    </div>
+
+    <%# Backend Technologies %>
+    <div class="mb-12">
+      <h3 class="text-xl font-semibold text-gray-300 mb-4 text-center md:text-left">
+        <%= t(".tech_stack.backend") %>
+      </h3>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Solid Queue</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Solid Cache</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Solid Cable</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Pundit</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">bcrypt</span>
+      </div>
+    </div>
+
+    <%# DevOps Technologies %>
+    <div class="mb-12">
+      <h3 class="text-xl font-semibold text-gray-300 mb-4 text-center md:text-left">
+        <%= t(".tech_stack.devops") %>
+      </h3>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Kamal</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Docker</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Thruster</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">GitHub Actions</span>
+      </div>
+    </div>
+
+    <%# Security Technologies %>
+    <div class="mb-12">
+      <h3 class="text-xl font-semibold text-gray-300 mb-4 text-center md:text-left">
+        <%= t(".tech_stack.security") %>
+      </h3>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Brakeman</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">bundler-audit</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Rate Limiting</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">CSP</span>
+      </div>
+    </div>
+
+    <%# Development Tools %>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-300 mb-4 text-center md:text-left">
+        <%= t(".tech_stack.development") %>
+      </h3>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-purple-500 transition-colors">
+          <span class="text-purple-400">🤖</span> Claude CLI + Ralph
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Debug</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Web Console</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Rubocop</span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-750 hover:border-blue-500 transition-colors">Capybara</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Getting Started Section %>
+<section class="w-full -mx-5 px-5 py-16 lg:py-24 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-900">
+      <%= t(".getting_started.section_title") %>
+    </h2>
+
+    <div class="space-y-8 mb-12">
+      <%# Step 1 %>
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+        <div class="flex-1">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">
+            <%= t(".getting_started.step1_title") %>
+          </h3>
+          <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto border border-gray-700"><%= t(".getting_started.step1_code_html") %></pre>
+        </div>
+      </div>
+
+      <%# Step 2 %>
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+        <div class="flex-1">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">
+            <%= t(".getting_started.step2_title") %>
+          </h3>
+          <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto border border-gray-700"><%= t(".getting_started.step2_code") %></pre>
+        </div>
+      </div>
+
+      <%# Step 3 %>
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+        <div class="flex-1">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">
+            <%= t(".getting_started.step3_title") %>
+          </h3>
+          <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto border border-gray-700"><%= t(".getting_started.step3_code") %></pre>
+        </div>
+      </div>
+
+      <%# Step 4 %>
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
+        <div class="flex-1">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">
+            <%= t(".getting_started.step4_title") %>
+          </h3>
+          <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto border border-gray-700"><%= t(".getting_started.step4_code") %></pre>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="text-center">
+      <%= link_to t(".hero.cta_primary"), new_session_path, class: "inline-block px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-200" %>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,152 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+en:
+
+  actions:
+    view: "View"
+    edit: "Edit"
+    delete: "Delete"
+    cancel: "Cancel"
+
+  sessions:
+    new:
+      title: "Sign in"
+      sign_in: "Sign in"
+      forgot_password: "Forgot Password?"
+
+  layouts:
+    application:
+      footer:
+        branding: "Rails Starter"
+        tagline: "Build faster. Deploy easier."
+        documentation: "Documentation"
+        github: "GitHub"
+        issues: "Issues"
+        changelog: "Changelog"
+
+  home:
+    index:
+      hero:
+        version_badge: "Rails 8.1.2 • Ruby 3.4.8 • Ralph Wiggum AI Agent"
+        headline: "Ship Production-Ready Rails Apps in Minutes"
+        subheadline: "A modern Rails 8.1 starter template with Ralph Wiggum autonomous AI agent for fast feature development. Includes authentication, authorization, Hotwire, Tailwind CSS, and enterprise-grade security. Build features autonomously with AI-assisted development."
+        cta_primary: "Get Started"
+        cta_secondary: "View on GitHub"
+      benefits:
+        section_title: "Why Choose This Starter?"
+        modern:
+          icon: "⚡"
+          title: "Modern Stack, Zero Complexity"
+          description: "Rails 8.1 with Hotwire, Tailwind CSS, and Import Maps. No Node.js, no webpack, no build fatigue. Just clean, maintainable code."
+        secure:
+          icon: "🔒"
+          title: "Security First"
+          description: "Built-in authentication with bcrypt, Pundit authorization, CSP headers, rate limiting, Brakeman, and bundler-audit. Sleep well at night."
+        deploy:
+          icon: "🚀"
+          title: "Production Ready"
+          description: "Docker with Kamal, database-backed jobs and caching with Solid Queue/Cache/Cable. No Redis required. Deploy to any server in minutes."
+      features:
+        section_title: "What's Included"
+        section_subtitle: "Everything you need to start building immediately"
+        ralph: "Ralph Wiggum AI Agent"
+        tailwind: "Tailwind CSS"
+        hotwire: "Hotwire"
+        authentication: "Custom Authentication"
+        authorization: "Pundit Authorization"
+        solid_queue: "Solid Queue"
+        solid_cache: "Solid Cache"
+        solid_cable: "Solid Cable"
+        docker: "Docker + Kamal"
+        importmap: "Import Maps"
+        brakeman: "Brakeman Security"
+        rate_limiting: "Rate Limiting"
+        pwa: "PWA Ready"
+        ci_cd: "GitHub Actions CI/CD"
+        responsive: "Responsive Design"
+        i18n: "I18n Support"
+        propshaft: "Propshaft Assets"
+      tech_stack:
+        section_title: "Complete Technology Stack"
+        core: "Core"
+        frontend: "Frontend"
+        backend: "Backend"
+        devops: "DevOps"
+        security: "Security"
+        development: "Development"
+      getting_started:
+        section_title: "Quick Start"
+        step1_title: "Clone the repository"
+        step1_code_html: "git clone --depth=1 https://github.com/jademind/ralph-rails-starter.git<br>cd ralph-rails-starter<br>rm -rf .git"
+        step2_title: "Install dependencies"
+        step2_code: "./setup-project.sh"
+        step3_title: "Start the server"
+        step3_code: "bin/dev"
+        step4_title: "Visit the application"
+        step4_code: "Visit http://localhost:3000 and start building!"
+
+  dashboard:
+    index:
+      title: "Dashboard"
+      welcome: "Welcome to your Dashboard"
+      email: "Email"
+      quick_actions: "Quick Actions"
+      view_users: "View Users"
+      edit_profile: "Edit Profile"
+
+  users:
+    index:
+      title: "Users"
+      email_header: "Email"
+      actions_header: "Actions"
+      view: "View"
+      edit: "Edit"
+      delete: "Delete"
+      confirm_delete: "Are you sure?"
+    show:
+      title: "User Profile"
+      email_address: "Email Address"
+      edit_profile: "Edit Profile"
+      delete_account: "Delete Account"
+      back_to_users: "Back to Users"
+      confirm_delete: "Are you sure?"
+    edit:
+      title: "Edit User Profile"
+      email_address: "Email address"
+      update_profile: "Update Profile"
+      cancel: "Cancel"
+      errors_header:
+        one: "1 error prohibited this user from being saved:"
+        other: "%{count} errors prohibited this user from being saved:"
+    flash:
+      updated: "User was successfully updated."
+      deleted: "User was successfully deleted."
+    authorization:
+      unauthorized: "You are not authorized to perform this action."

@@ -1,0 +1,28 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <h1 class="text-3xl font-bold mb-6"><%= t("users.edit.title") %></h1>
+
+    <%= form_with(model: @user, class: "space-y-4") do |form| %>
+      <% if @user.errors.any? %>
+        <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+          <h2 class="font-bold"><%= t("users.edit.errors_header", count: @user.errors.count) %></h2>
+          <ul class="list-disc list-inside">
+            <% @user.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div>
+        <%= form.label :email_address, t("users.edit.email_address"), class: "block text-gray-700 font-bold mb-2" %>
+        <%= form.email_field :email_address, class: "w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="flex space-x-4">
+        <%= form.submit t("users.edit.update_profile"), class: "bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" %>
+        <%= link_to t("actions.cancel"), @user, class: "bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300" %>
+      </div>
+    <% end %>
+  </div>
+</div>
