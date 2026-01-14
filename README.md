@@ -125,6 +125,9 @@ Ralph will work autonomously, but you can monitor progress and intervene if need
 
 ## External Resources
 
+### Supporting article
+- **Ralph Wiggum Writes My Software**: https://www.mentalflares.com/ralph-wiggum-writes-my-software-so-i-have-time-for-what-matters/
+
 ### Ralph Wiggum Resources
 - **Step-by-Step Guide**: [Ryan Carson's Ralph Wiggum Guide](https://x.com/ryancarson/status/2008548371712135632)
 - **Ralph Scripts & Skills**: [Ralph GitHub Repository](https://github.com/snarktank/ralph)
